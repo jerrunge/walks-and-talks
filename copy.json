@@ -1,0 +1,294 @@
+{
+ "mast": {
+  "name": "Jeremy Runge",
+  "cta": "Ask for a walk or talk"
+ },
+ "hero": {
+  "kicker": "Coaching walks and talks · anywhere in the Bay",
+  "walks": "Walks and Talks with",
+  "dad": "Dad",
+  "lede": "Real mentorship, listening, and straight talk from a dad, an executive, and a coach. We walk the Bay, you talk, and you leave with a next step.",
+  "cta1": "Ask for a walk or talk",
+  "cta2": "What it is"
+ },
+ "shots": {
+  "s1": "PLACED: you and Alan at Linda Mar at sunset, whole frame (IMG_9833). The one photo that says the whole product.",
+  "s2": "PLACED: two figures from behind on the beach (DSC05620). The product without a face.",
+  "s3": "PLACED: the gym mirror shot (IMG_2172), his pick for Who is Dad. More life and realness.",
+  "s4": "PLACED: Cooper on the dunes (IMG_0004). The negotiator.",
+  "s5": "PLACED: the tide pools (IMG_2389). The coast itself."
+ },
+ "you": {
+  "h": {
+   "pre": "Is this",
+   "c": "you?",
+   "post": ""
+  },
+  "lines": [
+   "You're a gay man somewhere between your twenties and your forties, and you would like a man in your life you can really talk with.",
+   "Your career is stuck. Or it's going fine and you still can't sleep.",
+   "Something ended, or nothing has started, and you're done getting coaching from people who mean well but don't help.",
+   "You want a conversation your friends can't give you and connection your therapist shouldn't: warm, direct, and not about them."
+  ]
+ },
+ "offers": {
+  "h": {
+   "pre": "Two ways",
+   "c": "to start.",
+   "post": ""
+  },
+  "items": [
+   {
+    "title": "The Walk",
+    "meta": "First walk · 90 minutes · where you need",
+    "body": "We walk, you talk, I listen, and we explore the possibilities together. Career, the reset you keep putting off, the relationship, the body, the thing you have never said out loud. Boundaries are agreed on before we start.",
+    "price": "$175",
+    "note": "first walk"
+   },
+   {
+    "title": "The Pep Talk",
+    "meta": "50 minutes · phone, video, or in person",
+    "body": "Before the interview, after the breakup, the week you cannot get off the couch. Fifty minutes of straight talk and warm authority from someone who has been through worse and is still standing.",
+    "price": "$100",
+    "note": "first session"
+   }
+  ],
+  "more_h": {
+   "pre": "Then keep",
+   "c": "going.",
+   "post": ""
+  },
+  "more_line": "After the first session you have my number. The next one is a text away.",
+  "more": [
+   {
+    "title": "Another Walk",
+    "meta": "60 minutes · Where you need",
+    "body": "Same trail or a new one. Book it by text after our first walk.",
+    "price": "$100",
+    "note": "per hour"
+   },
+   {
+    "title": "Another Pep Talk",
+    "meta": "30 minutes · phone, video, or in person",
+    "body": "A voice in your corner before the thing. Book it by text after our first talk.",
+    "price": "$50",
+    "note": "per 30 minutes"
+   }
+  ],
+  "fine": "Cash, Apple Cash, or Venmo at the start of each session. No packages, no subscriptions, no invoices. Coaching, not therapy. Adults only."
+ },
+ "how": {
+  "h": {
+   "pre": "How it",
+   "c": "works.",
+   "post": ""
+  },
+  "steps": [
+   "You fill in the short form below. It reaches my phone within seconds.",
+   "I text you back, usually the same day. We pick a trail and a time that fits your side of the Bay, or a time to talk.",
+   "We meet at the trailhead. Public trail, daylight, your pace. You pay at the start, and then we walk.",
+   "Afterwards I send you one text with the next step we agreed on. That is the whole system."
+  ]
+ },
+ "brings": {
+  "h": {
+   "pre": "What",
+   "c": "Dad",
+   "post": "brings."
+  },
+  "pull": "I bring real care, compassion, and coaching. You bring the thing you need to say out loud. We walk through it, together.",
+  "lines": [
+   {
+    "b": "Gay man,",
+    "t": "who understands both the excitement, dynamics, and pressures of being a gay man in the Bay Area."
+   },
+   {
+    "b": "Twenty years",
+    "t": "running stores, then a region, then operations for a company of over sixty thousand, then a startup. I know what a hard conversation sounds like from many chairs."
+   },
+   {
+    "b": "Three kids,",
+    "t": "one of them the co-designer of an app we shipped together. I have been the dad in the room for a long time."
+   },
+   {
+    "b": "Coaching and counsel,",
+    "t": "not therapy or crisis care. If what you are carrying needs a clinician, I will say so plainly and help you find one."
+   },
+   {
+    "b": "What you say on the walk stays on the walk.",
+    "t": "If a story of ours ever shows up in my writing, it is anonymized, and only if you checked the box."
+   }
+  ]
+ },
+ "rules": {
+  "h": {
+   "pre": "The ground",
+   "c": "rules.",
+   "post": ""
+  },
+  "items": [
+   "Adults only. Eighteen and over, no exceptions.",
+   "Public trails, in daylight. I tell one person where I'll be, and you're welcome to do the same.",
+   "Coaching and mentorship, not therapy. I'm not a licensed clinician. If you're in crisis right now, call or text 988 first.",
+   "Never at my place or yours. Trails, tables, phone, or video.",
+   "Not a date, not a hookup. Dad is a role, not an invitation.",
+   "What you say on the walk stays on the walk. A story only ever shows up in my writing anonymized, and only if you checked the box.",
+   "Pay at the start of each session. I kindly request 24 hours cancellation notice. Just reach out, never worry."
+  ]
+ },
+ "places": {
+  "h": {
+   "pre": "Where we",
+   "c": "walk.",
+   "post": ""
+  },
+  "intro": "You pick, or I do. A few that could work:",
+  "items": [
+   {
+    "area": "Pacifica",
+    "spots": "Mori Point, Linda Mar Beach to Rockaway, Sweeney Ridge"
+   },
+   {
+    "area": "The Peninsula",
+    "spots": "Sawyer Camp Trail at Crystal Springs, Edgewood, the Coastal Trail"
+   },
+   {
+    "area": "San Francisco",
+    "spots": "Lands End, the Presidio down to Crissy Field, Ocean Beach"
+   },
+   {
+    "area": "The East Bay",
+    "spots": "Tilden, Lake Merritt, the Berkeley Marina"
+   },
+   {
+    "area": "The North Bay",
+    "spots": "The Marin Headlands, Tennessee Valley, Mount Tam"
+   },
+   {
+    "area": "The South Bay",
+    "spots": "Rancho San Antonio, the Palo Alto Baylands, Alum Rock"
+   }
+  ],
+  "outro": "Or the neighborhood you already walk. Pep Talks happen by phone, on video, or across a table."
+ },
+ "ask": {
+  "h": {
+   "pre": "Ask for a",
+   "c": "walk or talk.",
+   "post": ""
+  },
+  "intro": "Two minutes. I read every one myself.",
+  "f": {
+   "name": {
+    "label": "Your name",
+    "ph": "First name is fine"
+   },
+   "phone": {
+    "label": "Your number, so I can text you back",
+    "ph": "(415) 555-0100"
+   },
+   "which": {
+    "label": "Which one",
+    "chips": [
+     "The Walk",
+     "The Pep Talk",
+     "Not sure yet"
+    ]
+   },
+   "format": {
+    "label": "If a Pep Talk, how?",
+    "chips": [
+     "Phone",
+     "Video",
+     "In person"
+    ]
+   },
+   "side": {
+    "label": "Your side of the Bay",
+    "chips": [
+     "Pacifica",
+     "Peninsula",
+     "San Francisco",
+     "East Bay",
+     "North Bay",
+     "South Bay"
+    ]
+   },
+   "where": {
+    "label": "Do you have a walk in mind, or should I pick?",
+    "ph": "A trail, a park, your neighborhood, or 'you pick'"
+   },
+   "days": {
+    "label": "Days and times that usually work",
+    "ph": "Weekday mornings, Saturday afternoons, whatever is true"
+   },
+   "line": {
+    "label": "One line on what is on your mind (optional)",
+    "ph": "You do not have to say. It helps me pick the right trail."
+   }
+  },
+  "check1": "I am 18 or older.",
+  "check2": "If something from our walk ever appears in Jeremy's writing, anonymized, I am okay with that. (Optional. You can change your mind anytime.)",
+  "button": "Send it to Dad",
+  "next": "What happens next: I text you, usually the same day. Nothing is charged until we start.",
+  "alt": "Prefer to skip the form? Text me the same at",
+  "fine": "Your number is used only to text you back. Nothing here is sold, listed, or shared. This is a request, not a booking.",
+  "sms": "(650) 557-8474"
+ },
+ "about": {
+  "h": {
+   "pre": "Who is",
+   "c": "Dad.",
+   "post": ""
+  },
+  "p1": "I'm Jeremy. I write, I coach leaders, I build stuff, I lift, and I love walking, hiking, and backpacking, really anything outdoors. I spent twenty years at Apple and then as a VP, and I am forty-eight, six-foot-five, and rebuilding my own life in public, which turns out to be the most useful thing I have ever had to offer anyone.",
+  "p2": "I live in Pacifica with a seventy-pound Bernedoodle named Cooper, who is available for walks at no extra charge and negotiates with sandwiches.",
+  "more": "More of the story at"
+ },
+ "faq": {
+  "h": {
+   "pre": "Questions people",
+   "c": "ask.",
+   "post": ""
+  },
+  "items": [
+   {
+    "q": "Is this therapy?",
+    "a": "No. It is a walk with a coach and mentor who has done hard things and will tell you the truth kindly. If you need a clinician, I will say so."
+   },
+   {
+    "q": "Is this a date?",
+    "a": "No. It's coaching, with the ground rules above. If a date is what you're after, this isn't the walk for you."
+   },
+   {
+    "q": "Is this only for gay men?",
+    "a": "It was built with gay men in mind, because that is who kept asking me for it. Anyone who wants my honest counsel is welcome on the trail."
+   },
+   {
+    "q": "What if it rains?",
+    "a": "We walk anyway if you want to. Pacifica rain is mostly a rumor. If it is genuinely miserable we move to a table and a coffee. Same price, same talk."
+   },
+   {
+    "q": "Can I bring my dog?",
+    "a": "Yes."
+   },
+   {
+    "q": "How do I pay?",
+    "a": "Cash, Apple Cash, or Venmo at the start of each session."
+   },
+   {
+    "q": "What if I need to cancel?",
+    "a": "I kindly request 24 hours cancellation notice. Just reach out, never worry."
+   },
+   {
+    "q": "Can we do this more than once?",
+    "a": "Most people do. After the first walk we talk about a rhythm that fits, if you want one. The next one is a text away."
+   }
+  ]
+ },
+ "footer": {
+  "line": "Walks and Talks with Dad · a coaching offering of Jeremy Runge · Pacifica, CA",
+  "links": "· X · Bluesky · Instagram (handles to come)",
+  "fine": "Coaching, not therapy. Adults only. Not a licensed clinician. In a crisis, call or text 988."
+ }
+}

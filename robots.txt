@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://walks.jeremyrunge.com/sitemap.xml
