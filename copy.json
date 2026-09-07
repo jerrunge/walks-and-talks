@@ -37,7 +37,8 @@
    "c": "to start.",
    "post": ""
   },
-  "items": [
+  "walks_k": "Walks",
+  "walks": [
    {
     "title": "The Walk",
     "meta": "First walk · 90 minutes · where you need",
@@ -46,26 +47,21 @@
     "note": "first walk"
    },
    {
-    "title": "The Pep Talk",
-    "meta": "50 minutes · phone, video, or in person",
-    "body": "Before the interview, after the breakup, the week you cannot get off the couch. Fifty minutes of straight talk and warm authority from someone who has been through worse and is still standing.",
-    "price": "$100",
-    "note": "first session"
-   }
-  ],
-  "more_h": {
-   "pre": "Then keep",
-   "c": "going.",
-   "post": ""
-  },
-  "more_line": "After the first session you have my number. The next one is a text away.",
-  "more": [
-   {
     "title": "Another Walk",
     "meta": "60 minutes · Where you need",
     "body": "Same trail or a new one. Book it by text after our first walk.",
     "price": "$100",
     "note": "per hour"
+   }
+  ],
+  "talks_k": "Talks",
+  "talks": [
+   {
+    "title": "The Pep Talk",
+    "meta": "50 minutes · phone, video, or in person",
+    "body": "Before the interview, after the breakup, the week you cannot get off the couch. Fifty minutes of straight talk and warm authority from someone who has been through worse and is still standing.",
+    "price": "$100",
+    "note": "first session"
    },
    {
     "title": "Another Pep Talk",
@@ -75,6 +71,7 @@
     "note": "per 30 minutes"
    }
   ],
+  "more_line": "After the first session you have my number. The next one is a text away.",
   "fine": "Cash, Apple Cash, or Venmo at the start of each session. No packages, no subscriptions, no invoices. Coaching, not therapy. Adults only."
  },
  "how": {

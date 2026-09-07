@@ -25,7 +25,7 @@ const photo = (key, extra = "", eager = false) => {
   const p = PHOTOS[key];
   return `<figure class="photo${extra}" data-shot="${key}"><img src="${p.src}" width="${p.w}" height="${p.h}" alt="${esc(p.alt)}"${eager ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async"></figure>`;
 };
-const offer = (o) => `<div class="offer"><h3>${esc(o.title)}</h3><div class="meta">${esc(o.meta)}</div><p>${esc(o.body)}</p><div class="price">${esc(o.price)}<small>${esc(o.note)}</small></div></div>`;
+const offer = (o, i) => `<div class="offer${i > 0 ? " next" : ""}"><h3>${esc(o.title)}</h3><div class="meta">${esc(o.meta)}</div><p>${esc(o.body)}</p><div class="price">${esc(o.price)}<small>${esc(o.note)}</small></div></div>`;
 const field = (f, id, kind) => {
   const ctl = kind === "area"
     ? `<textarea id="${id}" name="${id}" rows="2" placeholder="${esc(f.ph)}" maxlength="600"></textarea>`
@@ -43,7 +43,7 @@ const ld = {
       "telephone": "+1" + digits(c.ask.sms),
       "provider": { "@type": "Person", "name": c.mast.name, "url": "https://jeremyrunge.com", "sameAs": ["https://jeremyrunge.com"] },
       "areaServed": c.places.items.map((p) => p.area).concat(["San Francisco Bay Area"]),
-      "offers": c.offers.items.concat(c.offers.more).map((o) => ({ "@type": "Offer", "name": o.title, "description": o.meta, "price": digits(o.price), "priceCurrency": "USD" })),
+      "offers": c.offers.walks.concat(c.offers.talks).map((o) => ({ "@type": "Offer", "name": o.title, "description": o.meta, "price": digits(o.price), "priceCurrency": "USD" })),
     },
     { "@type": "FAQPage", "mainEntity": c.faq.items.map((q) => ({ "@type": "Question", "name": q.q, "acceptedAnswer": { "@type": "Answer", "text": q.a } })) },
     { "@type": "WebSite", "@id": SITE + "/#site", "url": SITE + "/", "name": NAME },
@@ -101,11 +101,13 @@ const html = `<!doctype html>
 </div></section>
 <section class="tone" id="what"><div class="wrap">
   ${h2(c.offers.h)}
-  <div class="offers">${c.offers.items.map(offer).join("")}</div>
-  ${h2(c.offers.more_h, "sm")}
-  <p>${esc(c.offers.more_line)}</p>
-  <div class="offers more">${c.offers.more.map(offer).join("")}</div>
-  <p class="fine" style="margin-top:18px">${esc(c.offers.fine)}</p>
+  <div class="k gk">${esc(c.offers.walks_k)}</div>
+  <div class="offers">${c.offers.walks.map((o, i) => offer(o, i)).join("")}</div>
+  <hr class="rule">
+  <div class="k gk">${esc(c.offers.talks_k)}</div>
+  <div class="offers">${c.offers.talks.map((o, i) => offer(o, i)).join("")}</div>
+  <p style="margin-top:22px">${esc(c.offers.more_line)}</p>
+  <p class="fine" style="margin-top:10px">${esc(c.offers.fine)}</p>
 </div></section>
 <section><div class="wrap">
   ${h2(c.how.h)}
