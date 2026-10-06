@@ -62,6 +62,13 @@ p{max-width:60ch; margin:.55em 0;}
 .rules{list-style:none; padding:0; margin:14px 0 0; counter-reset:rule;}
 .rules li{display:grid; grid-template-columns:76px 1fr; gap:12px; padding:12px 0; border-top:1px solid var(--line); max-width:64ch;}
 .rules li:before{counter-increment:rule; content:"Rule 0" counter(rule); font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--coral-ink); padding-top:5px;}
+section.free{background:var(--coral-soft);}
+.free .k{color:var(--ink);}
+.strips{display:grid; grid-template-columns:1fr; gap:14px; margin-top:18px;}
+.strip{border-top:3px solid var(--ink); padding:16px 0 4px;}
+.strip .k{display:block; margin-bottom:8px;}
+.strip h3{font-size:1.9rem;}
+.strip .meta{font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.12em; text-transform:uppercase; color:var(--soft); margin:6px 0 10px;}
 .places{display:grid; grid-template-columns:1fr 1fr; gap:16px 22px; margin-top:16px;}
 .place p{margin:4px 0 0; font-size:.95rem; max-width:none;}
 form{border:2px solid var(--ink); border-radius:8px; padding:20px; margin-top:16px; display:grid; gap:16px; background:var(--paper);}
@@ -97,6 +104,7 @@ footer .k{color:var(--soft); display:block; margin-bottom:8px;}
 footer .fine{margin-top:10px;}
 @media(min-width:700px){
   .offers{grid-template-columns:1fr 1fr; gap:28px;}
+  .strips{grid-template-columns:1fr 1fr; gap:28px;}
   .about{grid-template-columns:.9fr 1.1fr;}
   .places{grid-template-columns:1fr 1fr 1fr;}
   .photo.hero{aspect-ratio:4/3; max-height:86vh;}

@@ -31,6 +31,29 @@
    "You want a conversation your friends can't give you and connection your therapist shouldn't: warm, direct, and not about them."
   ]
  },
+ "free": {
+  "h": {
+   "pre": "Come say",
+   "c": "hello.",
+   "post": ""
+  },
+  "intro": "Two free ways to meet me before you book anything.",
+  "items": [
+   {
+    "k": "Sundays · the Castro",
+    "title": "Dad is in.",
+    "meta": "1 to 3pm · Poesia Cafe, 4076 18th St",
+    "body": "Most Sundays I keep a table at Poesia Cafe on 18th Street. Pull up a chair and talk about whatever is on your mind, for five minutes or the whole two hours. Free, no booking. Starting Sunday, October 11."
+   },
+   {
+    "k": "Saturdays · Pacifica",
+    "title": "The Saturday walk.",
+    "meta": "9:30am · Mori Point, Bradford Way",
+    "body": "A free group walk on the Mori Point loop: about an hour and a half, one steep staircase up the bluff, and a view up and down the coast at the top. Leashed dogs are allowed on the Old Mori Trail. Free, no booking. Starting Saturday, October 17."
+   }
+  ],
+  "fine": "I skip the weeks I'm away. Adults only. To check before you come, text me at"
+ },
  "offers": {
   "h": {
    "pre": "Two ways",

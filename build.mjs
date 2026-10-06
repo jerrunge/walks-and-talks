@@ -99,6 +99,12 @@ const html = `<!doctype html>
   ${h2(c.you.h)}
   <ul class="you">${c.you.lines.map((l) => `<li>${esc(l)}</li>`).join("")}</ul>
 </div></section>
+<section class="free" id="free"><div class="wrap">
+  ${h2(c.free.h)}
+  <p>${esc(c.free.intro)}</p>
+  <div class="strips">${c.free.items.map((s) => `<div class="strip"><div class="k">${esc(s.k)}</div><h3>${esc(s.title)}</h3><div class="meta">${esc(s.meta)}</div><p>${esc(s.body)}</p></div>`).join("")}</div>
+  <p class="fine" style="margin-top:18px">${esc(c.free.fine)} <a href="sms:+1${digits(c.ask.sms)}">${esc(c.ask.sms)}</a>.</p>
+</div></section>
 <section class="tone" id="what"><div class="wrap">
   ${h2(c.offers.h)}
   <div class="k gk">${esc(c.offers.walks_k)}</div>
