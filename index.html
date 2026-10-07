@@ -241,6 +241,20 @@ footer .fine{margin-top:10px;}
 </div></footer>
 <script>
 (function(){
+  if (location.hostname !== "walks.jeremyrunge.com" || navigator.webdriver) return;
+  var m = /[?&]from=([a-z0-9-]{1,24})(&|$)/i.exec(location.search), q = m ? "?from=" + m[1].toLowerCase() : "", done = {};
+  if (m && history.replaceState) history.replaceState(null, "", location.pathname + location.hash);
+  window.walksCount = function(e){
+    if (done[e]) return; done[e] = 1;
+    var u = "https://walks-count.jer-c28.workers.dev/e/" + e + q;
+    try { if (!(navigator.sendBeacon && navigator.sendBeacon(u))) fetch(u, { method: "POST", mode: "no-cors", keepalive: true }); } catch (x) {}
+  };
+  walksCount("view");
+  document.addEventListener("click", function(ev){ if (ev.target.closest && ev.target.closest('a[href^="sms:"]')) walksCount("text"); });
+})();
+</script>
+<script>
+(function(){
   var form = document.getElementById("askform"), err = document.getElementById("askerr"), sent = document.getElementById("asksent");
   if (!form) return;
   var btn = form.querySelector(".send"), label = btn.textContent;
@@ -259,6 +273,7 @@ footer .fine{margin-top:10px;}
       .then(function(res){
         if (!res.ok) throw new Error(res.j && res.j.error === "slow down" ? "That is a lot of requests from one place. Give it an hour, or text me." : "It did not send.");
         form.hidden = true; sent.hidden = false; sent.scrollIntoView({ block: "start", behavior: "smooth" });
+        if (window.walksCount) walksCount("form");
       })
       .catch(function(ex){ fail((ex && ex.message) || "It did not send.") ; err.textContent += " You can also text me at (650) 557-8474."; });
   });

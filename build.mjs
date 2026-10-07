@@ -6,6 +6,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 const c = JSON.parse(readFileSync(new URL("./copy.json", import.meta.url), "utf8"));
 const SITE = "https://walks.jeremyrunge.com";
 const FN = "https://dsjnvwhyevjzsmuawkcs.supabase.co/functions/v1/walks-request";
+const COUNT = "https://walks-count.jer-c28.workers.dev"; // anonymous counts: no cookies, nothing about the visitor stored
 const NAME = "Walks and Talks with Dad";
 const TITLE = "Walks and Talks with Dad · coaching walks and pep talks in the Bay Area";
 const DESC = "Coaching walks and pep talks with Jeremy Runge, a dad, an executive, and a coach, anywhere in the Bay Area. Ninety minutes on a trail, straight talk, and a text with your next step.";
@@ -182,6 +183,20 @@ const html = `<!doctype html>
 </div></footer>
 <script>
 (function(){
+  if (location.hostname !== "walks.jeremyrunge.com" || navigator.webdriver) return;
+  var m = /[?&]from=([a-z0-9-]{1,24})(&|$)/i.exec(location.search), q = m ? "?from=" + m[1].toLowerCase() : "", done = {};
+  if (m && history.replaceState) history.replaceState(null, "", location.pathname + location.hash);
+  window.walksCount = function(e){
+    if (done[e]) return; done[e] = 1;
+    var u = "${COUNT}/e/" + e + q;
+    try { if (!(navigator.sendBeacon && navigator.sendBeacon(u))) fetch(u, { method: "POST", mode: "no-cors", keepalive: true }); } catch (x) {}
+  };
+  walksCount("view");
+  document.addEventListener("click", function(ev){ if (ev.target.closest && ev.target.closest('a[href^="sms:"]')) walksCount("text"); });
+})();
+</script>
+<script>
+(function(){
   var form = document.getElementById("askform"), err = document.getElementById("askerr"), sent = document.getElementById("asksent");
   if (!form) return;
   var btn = form.querySelector(".send"), label = btn.textContent;
@@ -200,6 +215,7 @@ const html = `<!doctype html>
       .then(function(res){
         if (!res.ok) throw new Error(res.j && res.j.error === "slow down" ? "That is a lot of requests from one place. Give it an hour, or text me." : "It did not send.");
         form.hidden = true; sent.hidden = false; sent.scrollIntoView({ block: "start", behavior: "smooth" });
+        if (window.walksCount) walksCount("form");
       })
       .catch(function(ex){ fail((ex && ex.message) || "It did not send.") ; err.textContent += " You can also text me at ${esc(c.ask.sms)}."; });
   });
