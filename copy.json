@@ -38,7 +38,10 @@
    "post": ""
   },
   "intro": "Two free ways to meet me before you book anything.",
-  "items": [
+  "items": [],
+  "fine": "I skip the weeks I'm away. Adults only. To check before you come, text me at",
+  "retired": "2026-10-31, his word: Mori Point and Poesia are off the table after the move; the section renders only when items is non-empty",
+  "items_retired_2026_10_31": [
    {
     "k": "Sundays · the Castro",
     "title": "Dad is in.",
@@ -51,8 +54,7 @@
     "meta": "9:30am · Mori Point, Bradford Way",
     "body": "A free group walk on the Mori Point loop: about an hour and a half, one steep staircase up the bluff, and a view up and down the coast at the top. Leashed dogs are allowed on the Old Mori Trail. Free, no booking. Starting Saturday, October 17."
    }
-  ],
-  "fine": "I skip the weeks I'm away. Adults only. To check before you come, text me at"
+  ]
  },
  "offers": {
   "h": {
