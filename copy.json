@@ -171,8 +171,8 @@
   "intro": "You pick, or I do. A few that could work:",
   "items": [
    {
-    "area": "Pacifica",
-    "spots": "Mori Point, Linda Mar Beach to Rockaway, Sweeney Ridge"
+    "area": "The South Bay",
+    "spots": "Rancho San Antonio, Fremont Older, Alum Rock, Los Gatos Creek, the Palo Alto Baylands"
    },
    {
     "area": "The Peninsula",
@@ -191,11 +191,12 @@
     "spots": "The Marin Headlands, Tennessee Valley, Mount Tam"
    },
    {
-    "area": "The South Bay",
-    "spots": "Rancho San Antonio, the Palo Alto Baylands, Alum Rock"
+    "area": "The coast",
+    "spots": "Mori Point, Linda Mar Beach to Rockaway, Sweeney Ridge"
    }
   ],
-  "outro": "Or the neighborhood you already walk. Pep Talks happen by phone, on video, or across a table."
+  "outro": "Or the neighborhood you already walk. Pep Talks happen by phone, on video, or across a table.",
+  "recentered": "2026-10-31, his word: home is Santa Clara; the South Bay first, the coast last"
  },
  "ask": {
   "h": {
